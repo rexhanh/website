@@ -7,6 +7,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import NavBar from "./component/header";
 import Footer from "./component/footer";
+import MyChatBot from "./component/chatbot";
+
 function App() {
   return (
     <HashRouter>
@@ -16,6 +18,8 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      {/* <ChatBot /> */}
+      <MyChatBot />
       <Footer />
     </HashRouter>
   );
