@@ -1,6 +1,6 @@
 import ChatBot from "react-chatbotify";
 import React from "react";
-import { chatbotSettings } from "../utils/chatbotSetting";
+import { chatbotSettings, chatbotStyle } from "../utils/chatbotSetting";
 const MyChatBot = () => {
   const formRef = React.useRef({});
 
@@ -75,7 +75,9 @@ const MyChatBot = () => {
       path: "start",
     },
   };
-  return <ChatBot flow={flow} settings={chatbotSettings} />;
+  return (
+    <ChatBot flow={flow} settings={chatbotSettings} styles={chatbotStyle} />
+  );
 };
 
 export default MyChatBot;
