@@ -31,7 +31,7 @@ export default function Home() {
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
               I am a Master of Engineering student at the University of Toronto,
-              passionate about building AI-powered applications that improve
+              passionate about developing AI-powered applications that enhance
               education, accessibility, and communication.
             </p>
           </motion.div>
