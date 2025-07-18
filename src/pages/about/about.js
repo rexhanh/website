@@ -39,7 +39,7 @@ export default function About() {
         </motion.div>
         <div className="h-1/2 md:h-full md:w-1/2">
           <iframe
-            src="https://cdn.jsdelivr.net/gh/rexhanh/files@main/resume/Rex_Resume_latest.pdf#zoom=75"
+            src="https://cdn.jsdelivr.net/gh/rexhanh/files@main/resume/Rex_Resume.pdf#zoom=75"
             className="w-full h-full md:h-full"
             title="Resume"
           ></iframe>
