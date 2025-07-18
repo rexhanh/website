@@ -1,4 +1,5 @@
 import favicon from "../asset/favicon.svg";
+
 const chatbotSettings = {
   general: {
     embedded: false,
@@ -12,6 +13,7 @@ const chatbotSettings = {
   },
   header: {
     title: <div>AMA BOT</div>,
+
     showAvatar: false,
   },
   notification: {
