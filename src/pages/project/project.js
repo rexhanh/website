@@ -5,16 +5,18 @@ import { projects } from "../../utils/constant";
 import Footer from "../../component/footer";
 export default function Project() {
   return (
-    <div className="bg-white h-full w-full">
-      <NavBar />
+    <div className="bg-white h-full">
+      <div className="bg-transparent">
+        <NavBar />
+      </div>
       <motion.div
-        className="h-screen py-10 flex flex-col"
+        className="h-full flex flex-col px-5 gap-5"
         animate={{ opacity: 1, y: 0, x: 0 }}
         initial={{ opacity: 0, y: -20, x: -20 }}
         transition={{ duration: 1 }}
       >
         {projects.map((project, index) => (
-          <div className="px-6 pt-10 lg:px-8 " key={index}>
+          <div key={index}>
             <Card
               title={project.title}
               description={project.description}

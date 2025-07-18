@@ -4,47 +4,45 @@ import Footer from "../../component/footer";
 
 export default function About() {
   return (
-    <div className="bg-white h-full w-full">
-      <NavBar />
-      <div className="px-6 pt-14 lg:px-8 h-screen flex">
-        <div className="mx-auto sm:py-10 lg:py-20 h-full flex flex-row align-center justify-center w-full">
-          <motion.div
-            className="w-full px-10 max-w-3xl h-full"
-            animate={{ opacity: 1, y: 0, x: 0 }}
-            initial={{ opacity: 0, y: -20, x: -20 }}
-            transition={{ duration: 1 }}
-          >
-            <h1 className="font-semibold tracking-tight sm:text-7xl">
-              About Me
-            </h1>
-            <p className="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
-              Hi! I’m Yuanrong, but I go by Rex. I graduated from UC Berkeley in
-              2020 with a B.S. in Electrical Engineering and Computer Science
-              and am now pursuing a master’s degree at the University of
-              Toronto, focusing on machine learning in education.
-              <br />
-              <br />
-              At Berkeley, I worked with Python, Java, and C, and studied topics
-              like algorithms, operating systems, AI, and deep learning. A
-              highlight was building a voice-controlled vehicle with a custom
-              microphone board. I also explored robotics and ROS.
-              <br />
-              <br />
-              I’m passionate about teaching—I tutored math at Chaffey College
-              and was a TA for a computer science course at Berkeley.
-              Professionally, I’ve developed iOS apps with Swift and later moved
-              to React Native for cross-platform development. I'm excited about
-              creating tools that make learning more effective and accessible.
-            </p>
-          </motion.div>
+    <div className="h-screen flex flex-col w-full">
+      <div className="bg-transparent">
+        <NavBar />
+      </div>
 
-          <motion.div className="w-full h-full">
-            <iframe
-              src="https://cdn.jsdelivr.net/gh/rexhanh/files@main/resume/Rex_Resume_latest.pdf#zoom=100"
-              className="w-full h-full"
-              title="Resume"
-            ></iframe>
-          </motion.div>
+      <div className="flex-1 flex flex-col md:flex-row overflow-hidden mb-5">
+        <motion.div
+          className="h-1/2 md:h-full md:w-1/2 overflow-auto p-4"
+          animate={{ opacity: 1, y: 0, x: 0 }}
+          initial={{ opacity: 0, y: -20, x: -50 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="font-semibold tracking-tight sm:text-5xl">About Me</h1>
+          <p className="mt-8 text-lg font-sm text-pretty sm:text-xl/6">
+            Hi! I’m Yuanrong, but I go by Rex. I graduated from UC Berkeley in
+            2020 with a B.S. in Electrical Engineering and Computer Science and
+            am now pursuing a master’s degree at the University of Toronto,
+            focusing on machine learning in education.
+            <br />
+            <br />
+            At Berkeley, I worked with Python, Java, and C, and studied topics
+            like algorithms, operating systems, AI, and deep learning. A
+            highlight was building a voice-controlled vehicle with a custom
+            microphone board. I also explored robotics and ROS.
+            <br />
+            <br />
+            I’m passionate about teaching—I tutored math at Chaffey College and
+            was a TA for a computer science course at Berkeley. Professionally,
+            I’ve developed iOS apps with Swift and later moved to React Native
+            for cross-platform development. I'm excited about creating tools
+            that make learning more effective and accessible.
+          </p>
+        </motion.div>
+        <div className="h-1/2 md:h-full md:w-1/2">
+          <iframe
+            src="https://cdn.jsdelivr.net/gh/rexhanh/files@main/resume/Rex_Resume_latest.pdf#zoom=75"
+            className="w-full h-full md:h-full"
+            title="Resume"
+          ></iframe>
         </div>
       </div>
       <Footer />
