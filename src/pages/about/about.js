@@ -1,14 +1,8 @@
 import { motion } from "motion/react";
-import NavBar from "../../component/header";
-import Footer from "../../component/footer";
 
 export default function About() {
   return (
-    <div className="h-screen flex flex-col w-full">
-      <div className="bg-transparent">
-        <NavBar />
-      </div>
-
+    <div className="flex flex-col w-full mt-[64px] h-[calc(100vh-64px)]">
       <div className="flex-1 flex flex-col md:flex-row overflow-hidden mb-5">
         <motion.div
           className="h-1/2 md:h-full md:w-1/2 overflow-auto p-4"
@@ -16,8 +10,10 @@ export default function About() {
           initial={{ opacity: 0, y: -20, x: -50 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-semibold tracking-tight sm:text-5xl">About Me</h1>
-          <p className="mt-8 text-lg font-sm text-pretty sm:text-xl/6">
+          <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+            About Me
+          </h1>
+          <p className="mt-8 text-lg text-pretty text-gray-600 sm:text-xl/8">
             Hi! I’m Yuanrong, but I go by Rex. I graduated from UC Berkeley in
             2020 with a B.S. in Electrical Engineering and Computer Science and
             am now pursuing a master’s degree at the University of Toronto,
@@ -45,7 +41,6 @@ export default function About() {
           ></iframe>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="bg-transparent">
+    <div className="fixed top-0 w-full bg-transparent">
       <header className="h-15 inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"

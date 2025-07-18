@@ -3,7 +3,7 @@ import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from "mdb-react-ui-kit";
 export default function Footer() {
   return (
     <>
-      <MDBFooter className="w-full text-center">
+      <MDBFooter className="fixed bottom-0 w-full text-center">
         <MDBContainer>
           <section>
             <MDBBtn
