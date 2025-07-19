@@ -3,7 +3,7 @@ import Card from "../../component/card";
 import { projects } from "../../utils/constant";
 export default function Project() {
   return (
-    <div className=" mt-[64px] h-screen">
+    <div className=" mt-5 h-screen">
       <motion.div
         className="h-full flex flex-col px-5 gap-5 "
         animate={{ opacity: 1, y: 0, x: 0 }}

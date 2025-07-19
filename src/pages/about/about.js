@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function About() {
   return (
-    <div className="flex flex-col w-full mt-[64px] h-[calc(100vh-64px)]">
+    <div className="flex flex-col w-full mt-5 h-[calc(100vh-64px)]">
       <div className="flex-1 flex flex-col md:flex-row overflow-hidden mb-5">
         <motion.div
           className="h-1/2 md:h-full md:w-1/2 overflow-auto p-4"

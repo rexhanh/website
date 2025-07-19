@@ -12,7 +12,7 @@ export default function Footer() {
               floating
               size="lg"
               className="text-dark m-1"
-              href="https://www.linkedin.com/in/rexhanh/!"
+              href="https://www.linkedin.com/in/rexhanh"
               role="button"
             >
               <MDBIcon fab className="fa-linkedin" />
